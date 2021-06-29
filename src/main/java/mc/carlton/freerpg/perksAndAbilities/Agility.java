@@ -13,6 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
+@SuppressWarnings("SpellCheckingInspection")
 public class Agility extends Skill{
 
     private String skillName = "agility";

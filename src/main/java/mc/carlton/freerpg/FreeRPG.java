@@ -80,12 +80,12 @@ public final class FreeRPG extends JavaPlugin implements Listener {
         //Initialize Placed Blocks Map
         PlacedBlockFileManager placedBlockFileManager = new PlacedBlockFileManager();
         placedBlockFileManager.initializePlacedBlocksFile(); //Creates blockLocations.dat if not already made
-        placedBlockFileManager.initializePlacedBlocks(); //Imports data from blockLocations.dat into a hashamp
+        placedBlockFileManager.initializePlacedBlocks(); //Imports data from blockLocations.dat into a hashmap
 
         //Initializes RecentLogouts List
         RecentPlayersFileManager recentPlayersFileManager = new RecentPlayersFileManager();
         recentPlayersFileManager.initializeRecentPlayersFile(); //Creates recentPlayers.dat if not already made
-        recentPlayersFileManager.initializeRecentPlayers(); //Imports data from recentPlayters.dat to an arrayList in RecentLogouts
+        recentPlayersFileManager.initializeRecentPlayers(); //Imports data from recentPlayers.dat to an arrayList in RecentLogouts
 
 
         //Check if the server uses world guard

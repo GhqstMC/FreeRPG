@@ -220,8 +220,8 @@ public class AbilityTimers {
             }
         }.runTaskTimer(plugin,refreshTicks,refreshTicks).getTaskId();
         abilityDurationTaskIds.put(taskUUID,taskID);
-        AbilityLogoutTracker incaseLogout = new AbilityLogoutTracker(player);
-        incaseLogout.setPlayerTask(skillName,taskID);
+        AbilityLogoutTracker inCaseOfLogout = new AbilityLogoutTracker(player);
+        inCaseOfLogout.setPlayerTask(skillName,taskID);
     }
 
     public void abilityDurationTimer(String skillName, long duration, String endMessage, String cooldownEndMessage, NamespacedKey key, ItemStack itemHeldInHand,int enchantLevel, int levelReqLevel) { //OverSpecified for Mining/Digging/Swordsmanship
@@ -251,9 +251,9 @@ public class AbilityTimers {
             }
         }.runTaskTimer(plugin,refreshTicks,refreshTicks).getTaskId();
         abilityDurationTaskIds.put(taskUUID,taskID);
-        AbilityLogoutTracker incaseLogout = new AbilityLogoutTracker(player);
-        incaseLogout.setPlayerItem(skillName,key);
-        incaseLogout.setPlayerTask(skillName,taskID);
+        AbilityLogoutTracker inCaseOfLogout = new AbilityLogoutTracker(player);
+        inCaseOfLogout.setPlayerItem(skillName,key);
+        inCaseOfLogout.setPlayerTask(skillName,taskID);
     }
 
     public void endAbility(String skillName,String endMessage,String cooldownEndMessage,boolean isDisabling) {
@@ -348,7 +348,7 @@ public class AbilityTimers {
 
         //Get the bossbar object
         BossBar durationBar = getPlayerBossBar(skillName);
-        if (durationBar == null) { //If the bossbar hasn't been stored yet, get it from the bossbarstorage class
+        if (durationBar == null) { //If the bossbar hasn't been stored yet, get it from the BossBarStorage class
             int numberOfActiveBars = bossBarStorage.numberOfActiveDurationBars(player);
             if (numberOfBossBarsAllowed <= numberOfActiveBars) { //If there's already too many ability bars running, don't add a new one
                 return;

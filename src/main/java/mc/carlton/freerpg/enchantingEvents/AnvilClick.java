@@ -38,6 +38,7 @@ public class AnvilClick implements Listener {
                         ConfigLoad configLoad1 = new ConfigLoad();
                         Map<String,Integer> expMap = configLoad1.getExpMapForSkill("enchanting");
                         ChangeStats increaseStats = new ChangeStats(p);
+                        //noinspection SpellCheckingInspection
                         increaseStats.changeEXP("enchanting",expMap.get("useAnvil_EXPperLevelUsed")*(level-newLevel));
                     }
                 }

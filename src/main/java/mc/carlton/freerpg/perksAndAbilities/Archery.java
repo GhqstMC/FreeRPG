@@ -13,6 +13,7 @@ import org.bukkit.util.Vector;
 
 import java.util.*;
 
+@SuppressWarnings("SpellCheckingInspection")
 public class Archery extends Skill{
     private static ArrayList<Entity> arrowsToRemove = new ArrayList<>();
     private static HashMap<UUID,Integer> multishotCount = new HashMap<>();

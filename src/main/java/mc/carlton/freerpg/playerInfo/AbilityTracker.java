@@ -18,15 +18,15 @@ public class AbilityTracker {
 
     public Integer[] getPlayerAbilities() {
         if (!playerAbilities.containsKey(uuid)) {
-            Integer[] initAbils = {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
-            playerAbilities.put(uuid,initAbils);
+            Integer[] initAbilities = {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
+            playerAbilities.put(uuid,initAbilities);
         }
         return playerAbilities.get(uuid);
     }
     public Map<UUID, Integer[]> getAbilities() {
         if (!playerAbilities.containsKey(uuid)) {
-            Integer[] initAbils = {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
-            playerAbilities.put(uuid,initAbils);
+            Integer[] initAbilitiess = {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
+            playerAbilities.put(uuid,initAbilitiess);
         }
         return playerAbilities;
     }
@@ -35,96 +35,96 @@ public class AbilityTracker {
         if (!playerAbilities.containsKey(uuid)) {
             return;
         }
-        Integer[] pAbils = playerAbilities.get(uuid);
+        Integer[] pAbilities = playerAbilities.get(uuid);
         switch(ability) {
             case "digging":
-                pAbils[0] = taskID;
+                pAbilities[0] = taskID;
                 break;
             case "woodcutting":
-                pAbils[1] = taskID;
+                pAbilities[1] = taskID;
                 break;
             case "mining":
-                pAbils[2] = taskID;
+                pAbilities[2] = taskID;
                 break;
             case "farming":
-                pAbils[3] = taskID;
+                pAbilities[3] = taskID;
                 break;
             case "fishing":
-                pAbils[4] = taskID;
+                pAbilities[4] = taskID;
                 break;
             case "archery":
-                pAbils[5] = taskID;
+                pAbilities[5] = taskID;
                 break;
             case "beastMastery":
-                pAbils[6] = taskID;
+                pAbilities[6] = taskID;
                 break;
             case "swordsmanship":
-                pAbils[7] = taskID;
+                pAbilities[7] = taskID;
                 break;
             case "defense":
-                pAbils[8] = taskID;
+                pAbilities[8] = taskID;
                 break;
             case "axeMastery":
-                pAbils[9] = taskID;
+                pAbilities[9] = taskID;
                 break;
             case "woodcuttingHaste":
-                pAbils[10] = taskID;
+                pAbilities[10] = taskID;
                 break;
             case "diggingToggle":
-                pAbils[11] = taskID;
+                pAbilities[11] = taskID;
                 break;
             case "archeryCrossbow":
-                pAbils[12] = taskID;
+                pAbilities[12] = taskID;
                 break;
             case "swordsSpeed":
-                pAbils[13] = taskID;
+                pAbilities[13] = taskID;
                 break;
             case "swordsStrength":
-                pAbils[14] = taskID;
+                pAbilities[14] = taskID;
                 break;
             default:
                 break;
         }
-        playerAbilities.put(uuid,pAbils);
+        playerAbilities.put(uuid, pAbilities);
     }
 
     public int getPlayerAbility(String ability) {
         if (!playerAbilities.containsKey(uuid)) {
-            Integer[] initAbils = {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
-            playerAbilities.put(uuid,initAbils);
+            Integer[] initAbilities = {-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1};
+            playerAbilities.put(uuid,initAbilities);
         }
-        Integer[] pAbils = playerAbilities.get(uuid);
+        Integer[] pAbilities = playerAbilities.get(uuid);
         switch(ability) {
             case "digging":
-                return pAbils[0];
+                return pAbilities[0];
             case "woodcutting":
-                return pAbils[1];
+                return pAbilities[1];
             case "mining":
-                return pAbils[2];
+                return pAbilities[2];
             case "farming":
-                return pAbils[3];
+                return pAbilities[3];
             case "fishing":
-                return pAbils[4];
+                return pAbilities[4];
             case "archery":
-                return pAbils[5];
+                return pAbilities[5];
             case "beastMastery":
-                return pAbils[6];
+                return pAbilities[6];
             case "swordsmanship":
-                return pAbils[7];
+                return pAbilities[7];
             case "defense":
-                return pAbils[8];
+                return pAbilities[8];
             case "axeMastery":
-                return pAbils[9];
+                return pAbilities[9];
             case "woodcuttingHaste":
-                return pAbils[10];
+                return pAbilities[10];
             case "diggingToggle":
-                return pAbils[11];
+                return pAbilities[11];
             case "archeryCrossbow":
-                return pAbils[12];
+                return pAbilities[12];
             case "swordsSpeed":
-                return pAbils[13];
+                return pAbilities[13];
             case "swordsStrength":
-                return pAbils[14];
+                return pAbilities[14];
             default:
                 return -1;
         }

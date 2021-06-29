@@ -16,6 +16,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.*;
 
+@SuppressWarnings("SpellCheckingInspection")
 public class BeastMastery extends Skill{
     private String skillName = "beastMastery";
 
@@ -239,6 +240,7 @@ public class BeastMastery extends Skill{
             Entity mount = entity;
             HorseRiding data_set = new HorseRiding();
             int taskID = new BukkitRunnable() {
+                @SuppressWarnings("SpellCheckingInspection")
                 @Override
                 public void run() {
                     if (p.isInsideVehicle()) {

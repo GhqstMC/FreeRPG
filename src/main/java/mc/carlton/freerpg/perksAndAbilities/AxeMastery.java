@@ -16,6 +16,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.*;
 
+@SuppressWarnings("SpellCheckingInspection")
 public class AxeMastery extends Skill{
     private String skillName = "axeMastery";
 

@@ -53,7 +53,7 @@ public class AbilityLogoutTracker {
 
     public void setPlayerItem(String ability,NamespacedKey key) {
         if (!playerKeys.containsKey(playerUUID)) { //Assures player is initialized
-            intiializePlayer();
+            initializePlayer();
         }
         Map<String,NamespacedKey> pItems = playerKeys.get(playerUUID);
         pItems.put(ability,key);
@@ -64,7 +64,7 @@ public class AbilityLogoutTracker {
         playerKeys.remove(playerUUID);
     }
 
-    public void intiializePlayer() {
+    public void initializePlayer() {
         String[] names = {"digging","woodcutting","mining","farming","fishing","archery","beastMastery","swordsmanship","defense",
             "axeMastery","woodcuttingHaste","swordSpeed","swordStrength"};
         Map<String, Integer> player_Tasks = new HashMap<>();

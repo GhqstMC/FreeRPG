@@ -113,7 +113,7 @@ public class LoginProcedure {
 
         //Initiates player abiliyLogoutTracker
         AbilityLogoutTracker abilityLogout = new AbilityLogoutTracker(p);
-        abilityLogout.intiializePlayer();
+        abilityLogout.initializePlayer();
 
         //Initializes Abilities
         Farming farmingClass =  new Farming(p);
