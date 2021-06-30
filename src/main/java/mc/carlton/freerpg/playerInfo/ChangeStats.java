@@ -4,7 +4,7 @@ import mc.carlton.freerpg.FreeRPG;
 import mc.carlton.freerpg.gameTools.ActionBarMessages;
 import mc.carlton.freerpg.gameTools.BossBarStorage;
 import mc.carlton.freerpg.gameTools.LanguageSelector;
-import mc.carlton.freerpg.guiEvents.MaxPassiveLevels;
+import mc.carlton.freerpg.events.gui.MaxPassiveLevels;
 import mc.carlton.freerpg.leaveAndJoin.LogoutProcedure;
 import mc.carlton.freerpg.perksAndAbilities.*;
 import mc.carlton.freerpg.configStorage.ConfigLoad;
